@@ -31,7 +31,7 @@ export default function Home() {
           setLogoOrder((prevOrder) => [...prevOrder, logo]);
         }, timeout);
       });
-  },[logos]);
+  },[]);// eslint-disable-line
   const renderLogos = () => {
     return logoOrder.map((logo) => (
         <a href={logo.link} key={logo.id}>
