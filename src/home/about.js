@@ -64,14 +64,13 @@ export default function About()
             </div>
             </div>
             <div className="flex items-center justify-center h-10 m-4">
-              <a 
-                href=""
+              <div
                 key="contact"
                 className='text-white hover:bg-white hover:text-slate-700 hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium'
                 onClick={() => handleNavLinkClick('contact')}
               >
                 Contact Me
-              </a>
+              </div>
               <DownloadButton/>
             </div>
         </main>

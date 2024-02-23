@@ -63,12 +63,12 @@ export default function Home() {
           <h3 className="text-black text-xl m-4">Find out more</h3>
           <div>
                {nav.map((item) => (
-                        <a  href=''
+                        <button
                             className={`text-red-950 hover:bg-gray-700 bg-white hover:text-white hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium m-2`}
                             onClick={() => handleNavLinkClick(item.href.substring(1))}
                         >
                             {item.name}
-                        </a>
+                        </button>
                     ))}
                 </div>
           <div className="flex flex-col items-center justify-center gap-5 mt-5">
