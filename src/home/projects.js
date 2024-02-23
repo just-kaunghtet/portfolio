@@ -27,13 +27,14 @@ export default function Projects()
             <h1 className="mb-5 mt-5 text-white font-bold w-screen text-4xl text-center pb-5">Explore My Previous Works</h1>
             <div className="flex flex-row bg-white p-5 justify-evenly ml-10 mr-10 rounded-lg" >
                 {projects.map((project=>
-                <a className="bg-slate-600 rounded-lg w-60 h-80 flex flex-col relative items-center hover:shadow-inner hover:opacity-95 hover:cursor-pointer hover:border-4 md:"
+                <a  href=""
+                    className="bg-slate-600 rounded-lg w-60 h-80 flex flex-col relative items-center hover:shadow-inner hover:opacity-95 hover:cursor-pointer hover:border-4 md:"
                     onClick={() => handleNavLinkClick("details",project)} >
                     <img src={project.src} alt={project.name} className="w-40 h-auto object-cover mt-3 rounded-lg"/>
                     <span  className="text-center mt-2 absolute w-full text-xl bottom-0 right-0.5 text-white pb-2 ">
                         {project.name}                 
                     </span>
-                    <a><img src=""></img></a>
+                    <a href=""><img alt="github" src=""></img></a>
                 </a>
                 ))}
             </div>

@@ -1,7 +1,6 @@
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
-import youtube from "../images/youtube.png"
-import facebook from "../images/facebook.png"
+import facebook from "../images/facebook.png";
 
 const logos = [
     { id: 'linkedin', src: linkedin, alt: 'LinkedIn', link:"https://www.linkedin.com/in/kaung-htet-15747a167" },

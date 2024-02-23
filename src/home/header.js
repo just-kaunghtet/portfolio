@@ -1,5 +1,5 @@
 import { Disclosure} from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react';
 
 export default function Header() {
@@ -40,6 +40,7 @@ export default function Header() {
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <a
+                            href=''
                             className={`${item.current ? 'text-white bg-gray-900' : 'text-gray-300 hover:bg-gray-700 hover:text-white hover:cursor-pointer'} rounded-md px-3 py-2 text-sm font-medium`}
                             onClick={() => updateMenuStatus(item,item.href.substring(1))}
                             aria-current={item.current ? 'page' : undefined}
