@@ -28,19 +28,19 @@ export default function Detail() {
     }
 
     return (
-        <main className="flex flex-row w-screen items-center bg-gray-600 h-screen lg:px-20 px-5 lg:py-20 py-10" id="details">
+        <main className="flex flex-row w-screen items-center bg-bluegray h-screen lg:px-20 px-5 lg:py-20 py-10" id="details">
             <div className="flex flex-col justify-around w-fit">
                 {projects.map(project => (
                     <span
                         key={project.name}
-                        className={`flex lg:text-lg text-sm text-white h-auto p-5 items-center rounded-tl-lg rounded-bl-lg hover:bg-cyan-950 hover:shadow-xl hover:cursor-pointer ${project.active ? "bg-cyan-950" : ""}`}
+                        className={`flex lg:text-lg text-sm text-silver h-auto p-5 items-center rounded-tl-lg rounded-bl-lg hover:bg-darkBlue hover:shadow-xl hover:cursor-pointer ${project.active ? "bg-darkBlue" : ""}`}
                         onClick={() => updateProjectStatus(project)}
                     >
                         {project.name}
                     </span>
                 ))}
             </div>
-            <div className="flex flex-row bg-cyan-950 h-full w-full rounded-lg">
+            <div className="flex flex-row bg-darkBlue h-full w-full rounded-lg">
                 {projects.map(project =>
                     project.active ? (
                         <div className=" flex flex-col gap-5 sm:m-10 m-5" key={project.name}>
@@ -49,12 +49,12 @@ export default function Detail() {
                             <div className="text-white">
                                 Used Languages: 
                                 {project.language.map(lang => (
-                                     <span key={lang}>{` ${lang}`}</span>
+                                     <span key={lang}>{`${lang}`}</span>
                                 ))}
                             </div>
                             {
                                 project.webLink &&
-                                <a href={project.webLink} className="flex bg-slate-800 rounded-xl w-40 h-14 text-white text-lg items-center justify-center hover:shadow-lg hover:text-slate-800 hover:bg-white">Go to Website</a>
+                                <a href={project.webLink} className="flex bg-bluegray rounded-xl w-40 h-14 text-orange text-lg items-center justify-center hover:shadow-lg hover:text-slate-800 hover:bg-white">Go to Website</a>
                             }
                         </div>
                     ) : null

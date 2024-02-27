@@ -19,7 +19,7 @@ const logos = [
 export default function Contact()
 {
     return (
-        <main className="w-screen h-screen grid sm:grid-cols-2 grid-cols-1 bg-cyan-950 sm:pt-24 sm:pl-20 p-10 items-center" id='contact'>
+        <main className="w-screen h-screen grid sm:grid-cols-2 grid-cols-1 bg-darkBlue sm:pt-24 sm:pl-20 p-10 items-center" id='contact'>
             <div className="flex flex-col">
             <h1 className=" text-2xl text-white mb-10">Contact Me Anytime</h1>
             <div className="grid "style={{gridTemplateColumns:'2.5fr 1fr'}}>
@@ -42,7 +42,7 @@ export default function Contact()
                 </div>
             ))} 
             </div>
-            <footer className="text-white col-span-full"> My Portfolio Project @ 2024 | Made with Tailwind and React | All Rights Reserved </footer>
+            <footer className="text-white col-span-full"> My Portfolio Project @ 2024  | Design by Kaung Htet | Made with Tailwind and React | All Rights Reserved </footer>
         </main>
     )
 }

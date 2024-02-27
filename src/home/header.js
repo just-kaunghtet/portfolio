@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <>
       <div className="h-16 sticky w-full top-0 z-50">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-darkBlue">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-8xl px-4">
@@ -40,7 +40,7 @@ export default function Header() {
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <div
-                            className={`${item.current ? 'text-white bg-gray-900' : 'text-gray-300 hover:bg-gray-700 hover:text-white hover:cursor-pointer'} rounded-md px-3 py-2 text-sm font-medium`}
+                            className={`${item.current ? 'text-orange bg-gray-900' : 'text-silver hover:text-orange hover:cursor-pointer'} rounded-md px-3 py-2 text-sm font-medium`}
                             onClick={() => updateMenuStatus(item,item.href.substring(1))}
                             aria-current={item.current ? 'page' : undefined}
                           >
