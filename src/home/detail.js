@@ -8,11 +8,11 @@ import attandence from "../images/attendance.png"
 
 export default function Detail() {
     const [projects, setProjects] = useState([
-        { name: "Portfilio Page",src:folio, description: "pfp", language: ["React", "Tailwind CSS"], active: true },
-        { name: "Hotel Front Desk System",src:checkIn, description: "hfds", language: ["Java", "MySQL"], active: false },
-        { name: "Book Library",src:ol, description: "b-l", language: ["HTML", "CSS", "JavaScript", "React"], active: false },
-        { name: "Automated Plant Care System",src:plantCare, description: "apcs", language: ["C++", "Arduino"], active: false },
-        { name: "Student Attendance System", src:attandence, description: "sas", language: ["C++", "Arduino", "React"], active: false }
+        { name: "Portfilio Page",src:folio, description: "pfp", language: ["React", "Tailwind CSS"], active: true , webLink:"https://guileless-mermaid-595299.netlify.app"},
+        { name: "Hotel Front Desk System",src:checkIn, description: "hfds", language: ["Java", "MySQL"], active: false , webLink:"" },
+        { name: "Book Library",src:ol, description: "b-l", language: ["HTML", "CSS", "JavaScript", "React"], active: false , webLink:"https://preeminent-squirrel-459f18.netlify.app"},
+        { name: "Automated Plant Care System",src:plantCare, description: "apcs", language: ["C++", "Arduino"], active: false , webLink:""},
+        { name: "Student Attendance System", src:attandence, description: "sas", language: ["C++", "Arduino", "React"], active: false , webLink:""}
     ]);
 
     // Function to update project status
@@ -28,8 +28,8 @@ export default function Detail() {
     }
 
     return (
-        <main className="flex flex-row w-screen bg-gray-600 h-screen p-10 pt-24" id="details">
-            <div className="flex flex-col justify-around">
+        <main className="flex w-screen bg-gray-600 h-screen sm:p-10 px-0" id="details">
+            <div className="flex flex-col justify-around w-2/3">
                 {projects.map(project => (
                     <span
                         key={project.name}
@@ -40,11 +40,11 @@ export default function Detail() {
                     </span>
                 ))}
             </div>
-            <div className="flex flex-row bg-cyan-950 w-full rounded-lg">
+            <div className="flex flex-row bg-cyan-950 sm:w-full w-fit rounded-lg">
                 {projects.map(project =>
                     project.active ? (
-                        <div className=" flex gap-5 ml-10 mt-10" key={project.name}>
-                            <img src={project.src} alt={project.name} className="h-40 w-auto" />
+                        <div className=" flex flex-col gap-5 sm:m-10 m-5" key={project.name}>
+                            <img src={project.src} alt={project.name} className="h-40 w-40" />
                             <h1 className="text-white">{`Project Name: ${project.name}`}</h1>
                             <div className="text-white">
                                 Used Languages: 
@@ -52,6 +52,10 @@ export default function Detail() {
                                      <span key={lang}>{` ${lang}`}</span>
                                 ))}
                             </div>
+                            {
+                                project.webLink &&
+                                <a href={project.webLink} className="flex bg-slate-800 rounded-xl w-40 h-14 text-white text-lg items-center justify-center hover:shadow-lg hover:text-slate-800 hover:bg-white">Go to Website</a>
+                            }
                         </div>
                     ) : null
                 )}

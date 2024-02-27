@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profile from '../images/profile.png';
+import profile from '../images/me.jpg';
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import youtube from "../images/youtube.png"
@@ -54,7 +54,7 @@ export default function Home() {
     }
   };
   return (
-    <main className="grid grid-cols-2 bg-slate-500 w-full h-screen overflow-hidden" id='home'>
+    <main className="grid lg:grid-cols-2 grid-cols-1 bg-slate-500 w-screen h-screen overflow-hidden" id='home'>
       <div className="flex flex-col text-center justify-center w-full h-full">
         <h1 className="text-gray-800 text-3xl font-bold m-2">Hello There!</h1>
         <h2 className="font-medium text-2xl m-2 ">I am <span className="text-indigo-800"> Kaung Htet</span></h2>
@@ -80,10 +80,9 @@ export default function Home() {
         <img
           src={profile}
           alt="profile"
-          className="w-96 rounded-full "
+          className="lg:w-96 w-40 rounded-full"
         />
         <div className='flex justify-evenly items-center mt-10 gap-5'>
-        <h1 className='font-bold text-3xl'>Find Me on Socials:</h1>
           {renderLogos()}
         </div>
       </div>
