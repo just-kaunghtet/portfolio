@@ -23,7 +23,7 @@ export default function Contact()
             <div className="flex flex-col">
             <h1 className=" text-2xl text-white mb-10">Contact Me Anytime</h1>
             <div className="grid "style={{gridTemplateColumns:'2.5fr 1fr'}}>
-                <input className="h-10 mr-10 pl-5" type="text" placeholder="Enter your message"/><button className=" bg-white h-10 w-20 rounded-lg hover:bg-gray-700">Send</button>
+                <input className="h-10 mr-10 pl-5" type="text" placeholder="Enter your message"/><button className=" bg-silver text-orange h-10 w-20 rounded-lg hover:bg-orange hover:text-silver">Send</button>
             </div>
             <div className="flex my-10 gap-10">
             {logos.map((logo)=>(
