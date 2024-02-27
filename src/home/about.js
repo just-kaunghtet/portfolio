@@ -23,13 +23,15 @@ export default function About()
       }
     };
     return(
-        <main className="flex flex-col justify-top bg-slate-700 h-screen w-screen lg:px-10 px-5 lg:pt-20 pt-10"id="about">
+        <main className="flex flex-col justify-top bg-slate-700 h-screen w-screen lg:pt-20 pt-10"id="about">
+          <div className="lg:px-24 px-5">
             <h1 className="text-white lg:text-5xl text-2xl text-left w-full mb-5 top-0">Get to Know Me</h1>
             <p className="text-white lg:mb-10 mb-5">
                    I am a computer engineering student with an experience in front-end development.
                    My Journey to the Front-End world started when I was introduced to HTML, CSS and JavaScript through YouTube.
                    And then I embarked on a Journey of a front-end developer , learning and mastering the skills required for web development.
             </p>
+          </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-start text-center">
             <div>
             <h1 className="text-white text-3xl">Skills</h1>

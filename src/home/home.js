@@ -54,14 +54,14 @@ export default function Home() {
     }
   };
   return (
-    <main className="grid lg:grid-cols-2 grid-cols-1 bg-slate-500 w-screen h-screen overflow-hidden" id='home'>
-      <div className="flex flex-col text-center justify-center w-full h-full">
+    <main className="grid lg:grid-cols-2 grid-cols-1 bg-slate-500 w-screen h-screen" id='home'>
+      <div className="flex flex-col text-center justify-center w-full h-full px-5">
         <h1 className="text-gray-800 text-3xl font-bold m-2">Hello There!</h1>
         <h2 className="font-medium text-2xl m-2 ">I am <span className="text-indigo-800"> Kaung Htet</span></h2>
         <p>I am a front-end developer who is just trying my best to become better.</p>
         <div>
           <h3 className="text-black text-xl m-4">Find out more</h3>
-          <div>
+          <div className='sm:flex hidden'>
                {nav.map((item) => (
                         <button
                             className={`text-red-950 hover:bg-gray-700 bg-white hover:text-white hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium m-2`}
@@ -80,7 +80,7 @@ export default function Home() {
         <img
           src={profile}
           alt="profile"
-          className="lg:w-96 w-40 rounded-full"
+          className="lg:w-80 w-40 rounded-full"
         />
         <div className='flex justify-evenly items-center mt-10 gap-5'>
           {renderLogos()}

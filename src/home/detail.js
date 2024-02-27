@@ -28,19 +28,19 @@ export default function Detail() {
     }
 
     return (
-        <main className="flex w-screen bg-gray-600 h-screen sm:p-10 px-0" id="details">
-            <div className="flex flex-col justify-around w-2/3">
+        <main className="flex flex-row w-screen items-center bg-gray-600 h-screen lg:px-20 px-5 lg:py-20 py-10" id="details">
+            <div className="flex flex-col justify-around w-fit">
                 {projects.map(project => (
                     <span
                         key={project.name}
-                        className={`flex text-xl text-white h-auto p-5 items-center rounded-tl-lg rounded-bl-lg hover:bg-cyan-950 hover:shadow-xl hover:cursor-pointer ${project.active ? "bg-cyan-950" : ""}`}
+                        className={`flex lg:text-lg text-sm text-white h-auto p-5 items-center rounded-tl-lg rounded-bl-lg hover:bg-cyan-950 hover:shadow-xl hover:cursor-pointer ${project.active ? "bg-cyan-950" : ""}`}
                         onClick={() => updateProjectStatus(project)}
                     >
                         {project.name}
                     </span>
                 ))}
             </div>
-            <div className="flex flex-row bg-cyan-950 sm:w-full w-fit rounded-lg">
+            <div className="flex flex-row bg-cyan-950 h-full w-full rounded-lg">
                 {projects.map(project =>
                     project.active ? (
                         <div className=" flex flex-col gap-5 sm:m-10 m-5" key={project.name}>
