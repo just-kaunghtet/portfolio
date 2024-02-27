@@ -54,7 +54,7 @@ export default function Detail() {
                             </div>
                             {
                                 project.webLink &&
-                                <a href={project.webLink} className="flex bg-bluegray rounded-xl w-40 h-14 text-orange text-lg items-center justify-center hover:shadow-lg hover:text-slate-800 hover:bg-white">Go to Website</a>
+                                <a href={project.webLink} className="flex rounded-xl w-40 h-14 text-white text-lg items-center justify-center hover:bg-bluegray hover:shadow-lg hover:text-orange">Go to Website</a>
                             }
                         </div>
                     ) : null

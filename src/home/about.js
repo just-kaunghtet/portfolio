@@ -35,7 +35,7 @@ export default function About()
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-start text-center">
             <div>
             <h1 className="text-silver text-3xl">Skills</h1>
-            <div className="flex lg:flex-col items-start lg:px-20 my-5 justify-center ">
+            <div className="flex lg:flex-col items-start lg:pl-60 my-5 justify-center ">
                 {languages.map((language)=>
                 (
                   <div className="flex justify-start lg:my-5" ><img src={language.src} alt={language.alt} className="w-10 h-10 mr-10 ml-10"/><h3 className="text-silver hidden lg:flex">{language.name}</h3></div>
@@ -45,15 +45,15 @@ export default function About()
             <div className="flex flex-col">
             <div className="lg:flex lg:flex-col grid sm:grid-cols-2 grid-cols-1 items-center">
               <div className="flex flex-col text-silver sm:border-r-2 border-0 lg:border-0">
-                <h1 className="text-silver lg:text-3xl text-orange text-xl my-5">Educational Background </h1>
-                 <div className="flex flex-col items-center justify-center"> <h1 className=" text-slate-950 lg:text-3xl text-xl my-0"> Bachelor of Science </h1><span> Yangon Technological University</span>
+                <h1 className=" lg:text-3xl text-silver text-xl my-5">Educational Background </h1>
+                 <div className="flex flex-col items-center justify-center"> <h1 className=" text-orange lg:text-3xl text-xl my-0"> Bachelor of Science </h1><span> Yangon Technological University</span>
                        <span>From December 2016 - To Current </span></div> 
               </div>
               <div className="sm:flex hidden flex-col">
-              <h1 className="text-silver lg:text-3xl text-orange text-xl my-5"> Experiences Unrelated to Profession </h1>
+              <h1 className="lg:text-3xl text-silver text-xl my-5"> Experiences Unrelated to Profession </h1>
               <div className="flex flex-col">
                 <div  className="text-silver flex flex-col justify-center items-center">
-                  <h1 className="lg:text-3xl text-xl mr-5 text-slate-950">ESL Teacher</h1> 
+                  <h1 className="lg:text-3xl text-xl mr-5 text-orange">ESL Teacher</h1> 
                 <span>ALBA: Asia Language and Business Academy </span></div>
                 <span className="text-silver"> September 2019 - February 2020 </span>
               </div>
@@ -62,7 +62,7 @@ export default function About()
             <div className="flex items-center justify-center h-10 m-4">
               <div
                 key="contact"
-                className='text-orange hover:bg-white hover:text-slate-700 hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium'
+                className='text-white hover:text-orange hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium'
                 onClick={() => handleNavLinkClick('contact')}
               >
                 Contact Me

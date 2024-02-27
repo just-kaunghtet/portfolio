@@ -12,7 +12,7 @@ const DownloadButton = () => {
     }
   };
   return (
-    <button className='text-white hover:bg-white hover:text-slate-700 rounded-md px-3 py-2 text-sm font-medium' onClick={handleDownload}>
+    <button className='text-white hover:text-orange rounded-md px-3 py-2 text-sm font-medium' onClick={handleDownload}>
       Get My CV
     </button>
   );

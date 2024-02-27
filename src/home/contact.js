@@ -21,7 +21,7 @@ export default function Contact()
     return (
         <main className="w-screen h-screen grid sm:grid-cols-2 grid-cols-1 bg-darkBlue sm:pt-24 sm:pl-20 p-10 items-center" id='contact'>
             <div className="flex flex-col">
-            <h1 className=" text-2xl text-white mb-10">Contact Me Anytime</h1>
+            <h1 className=" text-2xl text-white mb-10">Send Me A Message</h1>
             <div className="grid "style={{gridTemplateColumns:'2.5fr 1fr'}}>
                 <input className="h-10 mr-10 pl-5" type="text" placeholder="Enter your message"/><button className=" bg-silver text-orange h-10 w-20 rounded-lg hover:bg-orange hover:text-silver">Send</button>
             </div>
