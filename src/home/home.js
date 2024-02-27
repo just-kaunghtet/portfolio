@@ -61,7 +61,7 @@ export default function Home() {
         <p>I am a front-end developer who is just trying my best to become better.</p>
         <div>
           <h3 className="text-black text-xl m-4">Find out more</h3>
-          <div className='sm:flex hidden'>
+          <div className='sm:flex hidden justify-center'>
                {nav.map((item) => (
                         <button
                             className={`text-red-950 hover:bg-gray-700 bg-white hover:text-white hover:cursor-pointer rounded-md px-3 py-2 text-sm font-medium m-2`}
