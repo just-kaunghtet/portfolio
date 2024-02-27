@@ -42,7 +42,7 @@ export default function Contact()
                 </div>
             ))} 
             </div>
-            <footer className="text-white col-span-full"> My Portfolio Project @ 2024  | Design by Kaung Htet | Made with Tailwind and React | All Rights Reserved </footer>
+            <footer className="text-white col-span-full"> My Portfolio Project @ 2024 | Made with Tailwind and React | All Rights Reserved </footer>
         </main>
     )
 }
