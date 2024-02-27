@@ -45,12 +45,12 @@ export default function About()
             <div className="flex flex-col">
             <div className="lg:flex lg:flex-col grid sm:grid-cols-2 grid-cols-1 items-center">
               <div className="flex flex-col text-silver sm:border-r-2 border-0 lg:border-0">
-                <h1 className="text-silver lg:text-3xl text-xl my-5">Educational Background </h1>
+                <h1 className="text-silver lg:text-3xl text-orange text-xl my-5">Educational Background </h1>
                  <div className="flex flex-col items-center justify-center"> <h1 className=" text-slate-950 lg:text-3xl text-xl my-0"> Bachelor of Science </h1><span> Yangon Technological University</span>
                        <span>From December 2016 - To Current </span></div> 
               </div>
               <div className="sm:flex hidden flex-col">
-              <h1 className="text-silver lg:text-3xl text-xl my-5"> Experiences Unrelated to Profession </h1>
+              <h1 className="text-silver lg:text-3xl text-orange text-xl my-5"> Experiences Unrelated to Profession </h1>
               <div className="flex flex-col">
                 <div  className="text-silver flex flex-col justify-center items-center">
                   <h1 className="lg:text-3xl text-xl mr-5 text-slate-950">ESL Teacher</h1> 
